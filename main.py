@@ -11,10 +11,10 @@ class InstaBot:
         # go to home page
         self.driver.get("http://instagram.com/")
         # click log in button
-        self.driver.find_element_by_xpath("/html/body/div[1]/section/main/article/div[2]/div[2]/p/a")\
-            .click()
+        # self.driver.find_element_by_xpath("/html/body/div[1]/section/main/article/div[2]/div[2]/p/a")\
+        #     .click()
         # enter username
-        self.driver.find_element_by_xpath("/html/body/div[1]/section/main/div/article/div/div[1]/div/form/div[2]/div/label/input")\
+        self.driver.find_element_by_xpath("//input[@name=\"username\"]")\
             .send_keys(username)
         # enter password
         self.driver.find_element_by_xpath("//input[@name=\"password\"]")\
